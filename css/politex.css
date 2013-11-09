@@ -46,7 +46,31 @@ ul {
 	list-style-type:none;
 }
 
+.active {
+	background:#555;
+	color:white;
+}
+
+.active:hover {
+	background:#555;
+}
+
 /* HEADER */
+
+.loading{
+  width:112%;
+  height:20px;
+  margin-top:40px;
+  overflow:hidden;
+  color:#000;
+  opacity:0;
+}
+
+/*.loading {
+	position:relative;
+	margin:0 auto;
+	opacity:0;
+}*/
 
 .header-container {
 	display:inline-block;
@@ -189,7 +213,7 @@ span {
 	display:inline-block;
 }
 table {
-	border:1px solid black;
+	/*border:1px solid black;*/
 	width:400px;
 	float:left;
 }
@@ -335,6 +359,7 @@ footer {
 	background:#444;
 	color:#fff;
 	padding:30px;
+	box-shadow:0 3px 10px 0 #222 inset;
 }
 
 footer > div {
