@@ -62,13 +62,19 @@ ul {
 	float:left;
 	box-shadow: 0 0 2px gray;
 	border-radius:2px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .header-container h2.title {
 	font-size:2.5em;
 	color:#ccc;
 }
 .login {
-	background:white;
+	background:#f8f8f8;
 	border:1px solid transparent;
 	box-shadow:0 0 2px gray;
 	width:15%;
@@ -90,7 +96,7 @@ input {
 	width:90%;
 	font-family:"Georgia";
 	margin-bottom:10px;
-	border:1px solid gray;
+	border:1px solid #ddd;
 	padding:2px;
 }
 input:hover {
@@ -103,15 +109,18 @@ input:focus {
 .login-button {
 	position:relative;
 	display:inline-block;
-	border:1px solid black;
+	border:1px solid gray;
+	box-shadow:0 0 1px gray;
 	width:40%;
 	margin-left:auto;
 	margin-right:10px;
 	text-align:center;
+	background:#ccc;
 }
 .login-button:hover {
 	cursor:pointer;
 	background:gray;
+	color:white;
 }
 .login-button:active {
 	background:black;
@@ -120,6 +129,29 @@ input:focus {
 span {
 	font-size:12px;
 }
+
+.acct {
+	opacity:0;
+	width:100%;
+}
+
+.acct > img {
+	display:inline-block;
+	position:relative;
+	float:left;
+	margin-top:-5px;
+	margin-right:10px;
+}
+
+.info {
+	position:relative;
+	width:auto;
+	display:inline-block;
+	float:left;
+}
+
+
+
 /* MIDDLE CONTENT -- Prediction Market and Top Users */
 
 .stats {
@@ -130,7 +162,7 @@ span {
 	margin:10px;
 	padding:10px;
 	width:70%;
-	height:300px;
+	height:420px;
 	float:left;
 	box-shadow: 0 0 2px gray;
 	border-radius:2px;
@@ -193,14 +225,21 @@ td {
 }
 
 .graph {
-	border:1px solid black;
-	width:40%;
+	/*border:1px solid black;*/
+	width:50%;
 	height:225px;
 	position:absolute;
 	display:inline-block;
 	float:right;
-	right:10%;
-	top:10%;
+	right:2%;
+	top:3%;
+	background:white;
+}
+
+#chart svg {
+  height: 400px;
+  background:white;
+  width:100%;
 }
 
 .top-users {
@@ -275,23 +314,28 @@ td {
 	border:1px solid #555;
 }
 
+body > hr {
+	margin-top:15px;
+}
+
 footer {
 	position:relative;
-	border:1px dashed black;
-	height:100px;
+	/*border:1px dashed black;*/
+	height:130px;
 	margin-bottom:0;
-	margin-top:10px;
+	margin-top:30px;
 	background:#444;
 	color:#fff;
+	padding:30px;
 }
 
 footer > div {
 	position:relative;
-	border:1px dashed black;
+	/*border:1px dashed black;*/
 	width:50%;
 	height:75px;
 	text-align:center;
-	margin-top:10px;
+	margin-top:20px;
 	margin-left:auto;
 	margin-right:auto;
 }
