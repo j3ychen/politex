@@ -85,6 +85,7 @@ ul {
 	float:right;
 	padding:10px;
 	border-radius:2px;
+	-webkit-transition:border 0.2s ease;
 }
 .login:hover {
 	border:1px solid #555;
@@ -98,6 +99,7 @@ input {
 	margin-bottom:10px;
 	border:1px solid #ddd;
 	padding:2px;
+	-webkit-transition:border 0.2s ease;
 }
 input:hover {
 	border:1px solid black;
@@ -116,6 +118,7 @@ input:focus {
 	margin-right:10px;
 	text-align:center;
 	background:#ccc;
+	-webkit-transition:all 0.2s ease;
 }
 .login-button:hover {
 	cursor:pointer;
@@ -166,6 +169,7 @@ span {
 	float:left;
 	box-shadow: 0 0 2px gray;
 	border-radius:2px;
+	-webkit-transition:border 0.2s ease;
 }
 .stats:hover{
 	border:1px solid #555;
@@ -199,6 +203,7 @@ thead>tr:hover {
 }
 th {
 	border:1px solid black;
+	-webkit-transition:all 0.2s ease;
 }
 th:hover{
 	background:gray;
@@ -254,6 +259,7 @@ td {
 	padding:10px;
 	box-shadow:0 0 2px gray;
 	border-radius:2px;
+	-webkit-transition:border 0.2s ease;
 }
 .top-users:hover {
 	border:1px solid #555;
@@ -290,6 +296,7 @@ td {
 	padding:10px;
 	box-shadow:0 0 2px gray;
 	border-radius:2px;
+	-webkit-transition:border 0.2s ease;
 }
 
 .discussion:hover {
@@ -308,6 +315,7 @@ td {
 	padding:10px;
 	box-shadow:0 0 2px gray;
 	border-radius:2px;
+	-webkit-transition:border 0.2s ease;
 }
 
 .news:hover {
