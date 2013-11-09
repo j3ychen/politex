@@ -22,7 +22,7 @@
 
         <div class="header-container item">
             <header class="wrapper clearfix">
-                <h1 class="title">POLITEX</h1>
+                <h1 class="title"><b>POLITEX</b></h1>
                 <h2 class="title">Wall Street of Politics</h2>
             </header>
         </div>
@@ -31,6 +31,7 @@
         	<div class="input-container">
         		<input type="username" placeholder="Username">
         		<input type="password" placeholder="Password">
+        		<div class="login-button">Login</div><span><a href="#">Sign up</a></span>
         	</div>
         </div>
 
@@ -49,19 +50,19 @@
         				<tr>
         					<td>McAullife</td>
         					<td>$41</td>
-        					<td>Up</td>
+        					<td><div id="up"></div></td>
         					<td>3/5</td>
         				</tr>
         				<tr>
         					<td>Cooch</td>
         					<td>$41</td>
-        					<td>Up</td>
+        					<td><div id="up"></div></td>
         					<td>3/5</td>
         				</tr>
         				<tr>
         					<td>Sarvis</td>
         					<td>$41</td>
-        					<td>Up</td>
+        					<td><div id="down"></div></td>
         					<td>3/5</td>
         				</tr>
         			</tbody>
@@ -88,7 +89,7 @@
         	<h1 class="title">Avenue for Discussion</h1>
         	<h2>Topic</h2>
         	<ul>
-        		<li><b>I think we should start eating babies </b> <a href="#">[...]</a> - Mike</li>
+        		<li><b>I think we should start eating babies </b> <a href="#">[...]</a></li>
         		<ul>
         			<li>[Top Comment] Vinay: I concur!</li>
         		</ul>
@@ -118,12 +119,7 @@
 			  columnWidth: 100,
 			  itemSelector: '.item'
 			});
-			var container1 = document.querySelector('body');
-			var msnry = new Masonry( container1, {
-			  // options
-			  columnWidth: 100,
-			  itemSelector: '.item2'
-			});
+
 		</script>
     </body>
 </html>

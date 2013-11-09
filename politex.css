@@ -2,9 +2,15 @@
 
 * {
 	-webkit-font-smoothing:antialiased;
-	box-style:border-box;
-	font-family:"Roboto";
-	font-weight:200;
+	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+	font-family:"Georgia";
+	font-weight:300;
+}
+
+img {
+  max-width: 100%;
 }
 
 ::-moz-selection {
@@ -31,18 +37,24 @@ ul {
 .header-container {
 	display:inline-block;
 	position:relative;
-	border:1px dashed black;
+	background:#484747;
+	color:white;
+	border:1px solid black;
 	width:55%;
 	height:100px;
 	margin:10px;
-	padding-left:10px;
+	padding-left:30px;
+	padding-top:10px;
 	float:left;
 }
-
+.header-container h2.title {
+	font-size:2.5em;
+	color:#ccc;
+}
 .login {
 	border:1px dashed black;
-	width:30%;
-	height:80px;
+	width:15%;
+	height:110px;
 	margin:10px;
 	display:inline-block;
 	position:relative;
@@ -53,10 +65,39 @@ ul {
 input {
 	display:block;
 	position:relative;
+	width:90%;
+	font-family:"Georgia";
 	margin-bottom:10px;
+	border:1px solid gray;
+	padding:2px;
+}
+input:hover {
+	border:1px solid black;
+}
+input:focus {
 	border:1px solid black;
 }
 
+.login-button {
+	position:relative;
+	display:inline-block;
+	border:1px solid black;
+	width:40%;
+	margin-left:auto;
+	margin-right:10px;
+	text-align:center;
+}
+.login-button:hover {
+	cursor:pointer;
+	background:gray;
+}
+.login-button:active {
+	background:black;
+	color:white;
+}
+span {
+	font-size:15px;
+}
 /* MIDDLE CONTENT -- Prediction Market and Top Users */
 
 .stats {
@@ -70,7 +111,19 @@ input {
 	float:left;
 }
 
+.stats > h1.title {
+	display:block;
+}
+
 /* Prediction Table */
+.prediction {
+	border:1px dashed black;
+	width:450px;
+	padding:10px;
+	height:150px;
+	position:relative;
+	display:inline-block;
+}
 table {
 	border:1px solid black;
 	width:400px;
@@ -88,13 +141,18 @@ th {
 	border:1px solid black;
 }
 th:hover{
-	background:white;
+	background:gray;
+	cursor:pointer;
+}
+th:active{
+	background: black;
+	color:white;
 }
 
 tr {
 	/*width:200px;*/
 	padding:10px;
-	border:1px solid black;
+	/*border:1px solid black;*/
 }
 
 tr:hover{
@@ -103,22 +161,24 @@ tr:hover{
 
 td {
 	width:auto;
-	border:1px solid black;
+	/*border:1px solid black;*/
 }
 
 .graph {
 	border:1px dashed black;
-	width:50%;
+	width:40%;
 	height:225px;
+	position:absolute;
 	display:inline-block;
 	float:right;
-	margin-right:30px;
+	right:10%;
+	top:10%;
 }
 
 .top-users {
 	border:1px dashed black;
 	display:inline-block;
-	width:12%;
+	width:200px;
 	height:300px;
 	position:relative;
 	float:right;
@@ -180,6 +240,8 @@ footer > div {
 	width:50%;
 }
 
+/* MISCELLANEOUS */
+
 h1.title{
 	width:300px;
 	display:inline;
@@ -189,4 +251,41 @@ h2.title{
 	text-align:center;
 	font-family:'Garamond';
 	font-size:2em;
+	margin-top:-10px;
 }
+
+#up {
+	position:relative;
+	width:20px;
+	height:20px;
+	margin-top:-28px;
+}
+
+#up:after {
+	content:'';
+	position:relative;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 10px 17.3px 10px;
+	border-color: transparent transparent #00ff3c transparent;
+}
+
+#down {
+	position:relative;
+	width:20px;
+	height:20px;
+	margin-top:10px;
+	margin-bottom:-40px;
+}
+
+#down:after {
+	content:'';
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 17.3px 10px 0 10px;
+	border-color: #ff005e transparent transparent transparent;
+}
+
+/* MEDIA QUERIES */
