@@ -2,7 +2,9 @@ $('.login-button').click(function(){
 	$('.input-container').fadeOut(100);
 	// $('#login-image').fadeIn(1000);
 	$('.login').width(400);
-	$('.acct').css({ opacity: 1 });
+	setTimeout(function() {
+      $('.acct').css({ opacity: 1 });
+	}, 100);
 });
 
 var data = [
