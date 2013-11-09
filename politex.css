@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic);
+
+* {
+	-webkit-font-smoothing:antialiased;
+	box-style:border-box;
+	font-family:"Roboto";
+	font-weight:200;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+	list-style-type:none;
+}
+
+/* HEADER */
+
+.header-container {
+	display:inline-block;
+	position:relative;
+	border:1px dashed black;
+	width:55%;
+	height:100px;
+	margin:10px;
+	padding-left:10px;
+	float:left;
+}
+
+.login {
+	border:1px dashed black;
+	width:30%;
+	height:80px;
+	margin:10px;
+	display:inline-block;
+	position:relative;
+	float:right;
+	padding:10px;
+}
+
+input {
+	display:block;
+	position:relative;
+	margin-bottom:10px;
+	border:1px solid black;
+}
+
+/* MIDDLE CONTENT -- Prediction Market and Top Users */
+
+.stats {
+	border:1px dashed black;
+	position:relative;
+	display:inline-block;
+	margin:10px;
+	padding:10px;
+	width:70%;
+	height:300px;
+	float:left;
+}
+
+/* Prediction Table */
+table {
+	border:1px solid black;
+	width:400px;
+	float:left;
+}
+
+thead {
+	border:1px solid black;
+}
+
+thead>tr:hover {
+	background:white;
+}
+th {
+	border:1px solid black;
+}
+th:hover{
+	background:white;
+}
+
+tr {
+	/*width:200px;*/
+	padding:10px;
+	border:1px solid black;
+}
+
+tr:hover{
+	background:gray;
+}
+
+td {
+	width:auto;
+	border:1px solid black;
+}
+
+.graph {
+	border:1px dashed black;
+	width:50%;
+	height:225px;
+	display:inline-block;
+	float:right;
+	margin-right:30px;
+}
+
+.top-users {
+	border:1px dashed black;
+	display:inline-block;
+	width:12%;
+	height:300px;
+	position:relative;
+	float:right;
+	margin:10px;
+	padding:10px;
+}
+.top-users>h1 {
+	text-align: center;
+}
+
+.top-users > ul {
+	margin-left:0;
+}
+
+.top-users>ol>li {
+	/*text-align:center;*/
+	margin-left:0;
+	margin-bottom:5px;
+}
+
+.top-users>ol>li:hover {
+	background:gray;
+}
+
+/* BOTTOM CONTENT */
+
+.discussion {
+	border:1px dashed black;
+	position:relative;
+	display:inline-block;
+	width:45%;
+	height:200px;
+	margin:10px;
+	float:left;
+	padding:10px;
+}
+
+.news {
+	border:1px dashed black;
+	position:relative;
+	width:45%;
+	height:200px;
+	margin:10px;
+	float:right;
+	display:inline-block;
+	padding:10px;
+}
+
+footer {
+	position:relative;
+	border:1px dashed black;
+	height:100px;
+	margin-top:10px;
+}
+
+footer > div {
+	position:relative;
+	border:1px dashed black;
+	width:50%;
+}
+
+h1.title{
+	width:300px;
+	display:inline;
+}
+
+h2.title{
+	text-align:center;
+	font-family:'Garamond';
+	font-size:2em;
+}
